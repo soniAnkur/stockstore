@@ -8,4 +8,6 @@
         $locationProvider.html5Mode(true);
     }
 
+    // test change
+
 })();
