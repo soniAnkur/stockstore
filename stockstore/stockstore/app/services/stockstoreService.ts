@@ -2,19 +2,18 @@
     'use strict'
     export interface IStockstoreService {
 
-        getProviders(): ng.IPromise<Array<any>>;
+        getProviders(): ng.IPromise<Array<IStockProvider>>;
+      
         getStocksByProvider(providerId: string): ng.IPromise<any>;
         getStockDetail(providerId: string, stockId: string): ng.IPromise<any>;
 
     };
     export interface IStockProvider {
 
-        id: string;
-        name: string;
-        code: string;
-        description: string;
+        source_code: string;
+        source_id: string;
 
-    };
+       };
     export interface IStock {
 
         id: string;
@@ -36,14 +35,13 @@
             this.$http = $http;
         }
 
+
         getProviders(): ng.IPromise<Array<any>> {
 
             return this.$http.get('http://192.168.158.125:5050/QuandlAAS/v1/providers/').then((response: ng.IHttpPromiseCallbackArg<IStockProvider[]>): IStockProvider[]=> {
-                return response.data;
+
+               return response.data;
             });
-            //return this.$http.get('/v1/providers').then((response: ng.IHttpPromiseCallbackArg<IStockProvider[]>): IStockProvider[]=> {
-            //    return response.data;
-            //});
         }
         getStocksByProvider(providerId: string): ng.IPromise<Array<IStock>> {
             return this.$http.get('/v1/provider/' + providerId).then((response: ng.IHttpPromiseCallbackArg<any>): any=> {

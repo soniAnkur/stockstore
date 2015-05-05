@@ -2,7 +2,7 @@
     'use strict'
 
     interface IStockstore extends ng.IScope{
-        providersList: Array<ss.services.IStockProvider>;
+        providersList: any;
     }
     class Stockstore {
 
@@ -10,10 +10,13 @@
         static $inject = ['ss.services.StockstoreService','$scope'];
 
         constructor(private stockstoreService: ss.services.IStockstoreService, private $scope: IStockstore) {
+
+            $scope.providersList = '[{"source_code":"UHERO","source_id":3},{"source_code":"NSE","source_id":33},{"source_code":"BCB","source_id":35}]';
+
            // var vm = this;
-            stockstoreService.getProviders().then((response: ss.services.IStockProvider[]): void=> {
-                $scope.providersList = response;
-            });
+            //stockstoreService.getProviders().then((response: ss.services.IStockProvider[]): void=> {
+            //    $scope.providersList = response;
+            //});
             //$scope.providersList = stockstoreService.getProviders();
 
         }

@@ -16,9 +16,6 @@ var ss;
                 return this.$http.get('http://192.168.158.125:5050/QuandlAAS/v1/providers/').then(function (response) {
                     return response.data;
                 });
-                //return this.$http.get('/v1/providers').then((response: ng.IHttpPromiseCallbackArg<IStockProvider[]>): IStockProvider[]=> {
-                //    return response.data;
-                //});
             };
             StockStoreService.prototype.getStocksByProvider = function (providerId) {
                 return this.$http.get('/v1/provider/' + providerId).then(function (response) {
