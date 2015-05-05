@@ -16,9 +16,6 @@ var ss;
                 return this.$http.get('http://www.quandl.com/api/v2/datasets.json?auth_token=y2XG7QW_EdBKrTFossSW&query=*&amp;source_code=BSE&amp;per_page=20&amp;page=1').then(function (response) {
                     return response.data;
                 });
-                //return this.$http.get('/v1/providers').then((response: ng.IHttpPromiseCallbackArg<IStockProvider[]>): IStockProvider[]=> {
-                //    return response.data;
-                //});
             };
             StockStoreService.prototype.getStocksByProvider = function (providerId) {
                 return this.$http.get('/v1/provider/' + providerId).then(function (response) {
