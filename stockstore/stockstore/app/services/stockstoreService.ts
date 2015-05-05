@@ -37,7 +37,7 @@
 
         getProviders(): ng.IPromise<Array<IStockProvider>> {
           
-            return this.$http.get('http://www.quandl.com/api/v2/datasets.json?auth_token=y2XG7QW_EdBKrTFossSW&query=*&amp;source_code=BSE&amp;per_page=20&amp;page=1').then((response: ng.IHttpPromiseCallbackArg<IStockProvider[]>): IStockProvider[]=> {
+            return this.$http.get('http://192.168.158.125:5050/QuandlAAS/v1/providers/').then((response: ng.IHttpPromiseCallbackArg<IStockProvider[]>): IStockProvider[]=> {
                 return response.data;
             });
         }
