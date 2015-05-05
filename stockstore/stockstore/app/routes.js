@@ -9,7 +9,7 @@ var application;
                 $routeProvider.when("/providers", {
                     controller: "ss.controllers.Stockstore",
                     templateUrl: "views/providers.html"
-                }).when("/stockByProvider/:id", {
+                }).when("/providers/:id", {
                     controller: "ss.controllers.StockstoreList",
                     templateUrl: "views/stock-list.html"
                 });
