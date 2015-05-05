@@ -83,7 +83,6 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\Icon.png" />
     <Content Include="app\index.html" />
     <Content Include="app\views\directive\providerDirective.html" />
     <Content Include="app\views\nse-data.html" />
