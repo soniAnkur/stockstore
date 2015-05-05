@@ -1,2 +1,9 @@
-﻿<h1>Stock Detail</h1>
-{{stockList}}
+﻿<h1>Stock List</h1>
+<table class="table">
+    <thead></thead>
+    <tbody>
+        <tr ng-repeat="docs in stockList.data">
+            <td ng-repeat="doc in docs">{{doc}}</td>
+        </tr>
+    </tbody>
+</table>
