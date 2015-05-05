@@ -11,8 +11,13 @@
                 controller: "ss.controllers.Stockstore",
                 templateUrl: "views/providers.html"
                 
-                });
-            $routeProvider.otherwise({ redirectTo: "/providers" })
+                }).when("/providers/:id", {
+
+                controller: "ss.controllers.StockstoreList",
+                templateUrl: "views/stock-list.html"
+
+            });
+            $routeProvider.otherwise({ redirectTo: "/providers" });
         }
 
     }

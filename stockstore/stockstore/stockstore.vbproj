@@ -87,6 +87,7 @@
     <Content Include="app\views\nse-data.html" />
     <Content Include="app\views\nasdeq-data.html" />
     <Content Include="app\views\bse-data.html" />
+    <Content Include="app\views\stock-detail.html" />
     <Content Include="app\views\providers.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -181,6 +182,7 @@
     <TypeScriptCompile Include="app\app.core.module.ts" />
     <TypeScriptCompile Include="app\app.modules.registry.ts" />
     <TypeScriptCompile Include="app\controllers\stockstore.controller.ts" />
+    <TypeScriptCompile Include="app\factory\ResourceFactory.ts" />
     <TypeScriptCompile Include="app\routes.ts" />
     <TypeScriptCompile Include="app\services\stockstoreService.ts" />
     <TypeScriptCompile Include="app\stockstoredetails\stockstoreDetail.controller.ts" />
