@@ -4,13 +4,14 @@ var ss;
     (function (controllers) {
         'use strict';
         var StockstoreDetail = (function () {
-            function StockstoreDetail(stockstoreService, providerId, stockId) {
+            function StockstoreDetail(stockstoreService, $scope, providerId, stockId) {
                 this.stockstoreService = stockstoreService;
-                var vm = this;
-                stockstoreService.getStockDetail(providerId, stockId).then(function (response) {
-                    vm.stockDetail = response;
-                });
+                $scope.stockDetail = "will have the detail information for each stock.";
+                //stockstoreService.getStockDetail(providerId,stockId).then((response: any): void => {
+                //    $scope.stockDetail = response;
+                //});
             }
+            StockstoreDetail.$inject = ['ss.services.StockstoreService', '$scope'];
             return StockstoreDetail;
         })();
         ;

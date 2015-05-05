@@ -1,20 +1,24 @@
 ﻿module ss.controllers {
     'use strict'
 
-    interface IStockstore {
+    interface IStockstore extends ng.IScope{
         providersList: Array<ss.services.IStockProvider>;
     }
-    class Stockstore implements IStockstore {
+    class Stockstore {
 
         providersList: Array<ss.services.IStockProvider>;
-        static $inject = ['ss.services.StockStoreService'];
-        constructor(private stockstoreService: ss.services.IStockstoreService) {
-            var vm = this;
+        static $inject = ['ss.services.StockstoreService','$scope'];
+
+        constructor(private stockstoreService: ss.services.IStockstoreService, private $scope: IStockstore) {
+           // var vm = this;
             stockstoreService.getProviders().then((response: ss.services.IStockProvider[]): void=> {
-                vm.providersList = response;
+                $scope.providersList = response;
             });
+            //$scope.providersList = stockstoreService.getProviders();
+
         }
     }
+   
     angular.module('ss.controllers').controller('ss.controllers.Stockstore', Stockstore);
 }
 

@@ -2,8 +2,52 @@
 <html>
 <head>
     <title>Stock Store</title>
-    <link rel="stylesheet" href="../Content/bootstrap.min.css"></head>
-<body>
-    
+    <link rel="stylesheet" href="../Content/bootstrap.min.css">
+    <!--<script data-main="config.js" src="Scripts/require.js"></script>-->
+</head>
+<body ng-app="ssmainmodule">
+
+
+    <nav class="navbar navbar-inverse" role="navigation" ng-controller="ss.controllers.Stockstore">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Stock-Store</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="#/BSE">BSE</a></li>
+            <li><a href="#/NSE">NSE</a></li>
+            <li><a href="#/NASDEQ">NASDEQ</a></li>
+
+
+        </ul>
+
+        <form role="search" class="navbar-form navbar-right">
+            <div class="form-group">
+                <input type="text" placeholder="Search" ng-model="searchText" class="form-control">
+            </div>
+        </form>
+    </nav>
+
+    <div ng-view></div>
+
+
+
+
+    <script type="text/javascript" src="../Scripts/angular.js"></script>
+    <script type="text/javascript" src="routes.js"></script>
+    <script type="text/javascript" src="../Scripts/angular-route.js"></script>
+    <script type="text/javascript" src="app.modules.registry.js"></script>
+    <script type="text/javascript" src="services/stockstoreService.js"></script>
+    <script type="text/javascript" src="controllers/stockstore.controller.js"></script>
+
+    <!--foe listing module-->
+
+    <script type="text/javascript" src="stockstorelist/stockstoreList.controller.js"></script>
+    <script type="text/javascript" src="stockstoredetails/stockstoreDetail.controller.js"></script>
+
+    <script type="text/javascript" src="app.module.js"></script>
+
+    <!-- <script type="text/javascript" src="app.config.module.js"></script>-->
+
+
 </body>
 </html>

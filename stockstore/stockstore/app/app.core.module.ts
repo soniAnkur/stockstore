@@ -1,13 +1,17 @@
-﻿((): void => {
+﻿//((): void => {
 
-    'use strict';
-    angular.module('ss.core', [
-    //angular modules
+//    'use strict';
+    
+//    angular.module('ss.core',
+//        [
+//    ////angular modules
 
-        'ngRoute',
-        'ngSanitize',
-        'ngCookies',
+//    //    'ngRoute',
+//    //    'ngSanitize',
+//    //    'ngCookies'
 
-    ]);
+//    ]);
 
-})(); 
+    
+
+//})(); 

@@ -1,8 +1,6 @@
 ﻿((): void=> {
     'use strict'
-    angular.module('ss', [
-        'ss.core',
-        'ss.services',
-        'ss.controllers'
-    ]);
-}) 
+    angular.module('ssmainmodule', ['ss.services', 'ss.controllers', 'ngRoute'])
+        .config(application.routes.Route.configuration);
+   
+})(); 

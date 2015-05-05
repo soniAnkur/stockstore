@@ -1,0 +1,9 @@
+C:\Users\ankursoni\Documents\stockstore-git-repository\stockstore\stockstore\bin\stockstore.dll.config
+C:\Users\ankursoni\Documents\stockstore-git-repository\stockstore\stockstore\bin\stockstore.dll
+C:\Users\ankursoni\Documents\stockstore-git-repository\stockstore\stockstore\bin\stockstore.pdb
+C:\Users\ankursoni\Documents\stockstore-git-repository\stockstore\stockstore\bin\stockstore.xml
+C:\Users\ankursoni\Documents\stockstore-git-repository\stockstore\stockstore\obj\Debug\stockstore.Resources.resources
+C:\Users\ankursoni\Documents\stockstore-git-repository\stockstore\stockstore\obj\Debug\stockstore.vbproj.GenerateResource.Cache
+C:\Users\ankursoni\Documents\stockstore-git-repository\stockstore\stockstore\obj\Debug\stockstore.dll
+C:\Users\ankursoni\Documents\stockstore-git-repository\stockstore\stockstore\obj\Debug\stockstore.xml
+C:\Users\ankursoni\Documents\stockstore-git-repository\stockstore\stockstore\obj\Debug\stockstore.pdb
