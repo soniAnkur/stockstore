@@ -7,3 +7,12 @@ C:\Users\ankursoni\Documents\stockstore-git-repository\stockstore\stockstore\obj
 C:\Users\ankursoni\Documents\stockstore-git-repository\stockstore\stockstore\obj\Debug\stockstore.dll
 C:\Users\ankursoni\Documents\stockstore-git-repository\stockstore\stockstore\obj\Debug\stockstore.xml
 C:\Users\ankursoni\Documents\stockstore-git-repository\stockstore\stockstore\obj\Debug\stockstore.pdb
+C:\Users\mohiuddunahamad\Documents\Visual Studio 2013\Projects\stockstore\stockstore\stockstore\bin\stockstore.dll.config
+C:\Users\mohiuddunahamad\Documents\Visual Studio 2013\Projects\stockstore\stockstore\stockstore\bin\stockstore.dll
+C:\Users\mohiuddunahamad\Documents\Visual Studio 2013\Projects\stockstore\stockstore\stockstore\bin\stockstore.pdb
+C:\Users\mohiuddunahamad\Documents\Visual Studio 2013\Projects\stockstore\stockstore\stockstore\bin\stockstore.xml
+C:\Users\mohiuddunahamad\Documents\Visual Studio 2013\Projects\stockstore\stockstore\stockstore\obj\Debug\stockstore.Resources.resources
+C:\Users\mohiuddunahamad\Documents\Visual Studio 2013\Projects\stockstore\stockstore\stockstore\obj\Debug\stockstore.vbproj.GenerateResource.Cache
+C:\Users\mohiuddunahamad\Documents\Visual Studio 2013\Projects\stockstore\stockstore\stockstore\obj\Debug\stockstore.dll
+C:\Users\mohiuddunahamad\Documents\Visual Studio 2013\Projects\stockstore\stockstore\stockstore\obj\Debug\stockstore.xml
+C:\Users\mohiuddunahamad\Documents\Visual Studio 2013\Projects\stockstore\stockstore\stockstore\obj\Debug\stockstore.pdb

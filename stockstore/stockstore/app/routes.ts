@@ -6,27 +6,13 @@
         static configuration($routeProvider: ng.route.IRouteProvider) {
             $routeProvider
 
-                .when("/BSE", {
+                .when("/providers", {
 
                 controller: "ss.controllers.Stockstore",
-                templateUrl: "views/bse-data.html"
+                templateUrl: "views/providers.html"
                 
-                })
-
-                .when("/NSE", {
-
-                controller: "ss.controllers.StockstoreList",
-                templateUrl: "views/nse-data.html"
-              
-                })
-
-                .when("/NASDEQ", {
-
-                controller: "ss.controllers.StockstoreDetail",
-                templateUrl: "views/nasdeq-data.html"
-               
-            }) ;
-            $routeProvider.otherwise({ redirectTo: "/BSE" })
+                });
+            $routeProvider.otherwise({ redirectTo: "/providers" })
         }
 
     }

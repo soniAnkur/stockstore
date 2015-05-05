@@ -6,17 +6,11 @@ var application;
             function Route() {
             }
             Route.configuration = function ($routeProvider) {
-                $routeProvider.when("/BSE", {
+                $routeProvider.when("/providers", {
                     controller: "ss.controllers.Stockstore",
-                    templateUrl: "views/bse-data.html"
-                }).when("/NSE", {
-                    controller: "ss.controllers.StockstoreList",
-                    templateUrl: "views/nse-data.html"
-                }).when("/NASDEQ", {
-                    controller: "ss.controllers.StockstoreDetail",
-                    templateUrl: "views/nasdeq-data.html"
+                    templateUrl: "views/providers.html"
                 });
-                $routeProvider.otherwise({ redirectTo: "/BSE" });
+                $routeProvider.otherwise({ redirectTo: "/providers" });
             };
             Route.$inject = ["$routeProvider"];
             return Route;
