@@ -88,7 +88,6 @@
     <Content Include="app\views\nse-data.html" />
     <Content Include="app\views\nasdeq-data.html" />
     <Content Include="app\views\bse-data.html" />
-    <Content Include="app\views\stock-detail.html" />
     <Content Include="app\views\providers.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -183,7 +182,6 @@
     <TypeScriptCompile Include="app\app.core.module.ts" />
     <TypeScriptCompile Include="app\app.modules.registry.ts" />
     <TypeScriptCompile Include="app\controllers\stockstore.controller.ts" />
-    <TypeScriptCompile Include="app\factory\ResourceFactory.ts" />
     <TypeScriptCompile Include="app\routes.ts" />
     <TypeScriptCompile Include="app\services\stockstoreService.ts" />
     <TypeScriptCompile Include="app\stockstoredetails\stockstoreDetail.controller.ts" />
@@ -198,7 +196,9 @@
     <TypeScriptCompile Include="Scripts\typings\jquery\jquery.d.ts" />
     <TypeScriptCompile Include="Scripts\typings\requirejs\require.d.ts" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="app\factory\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
