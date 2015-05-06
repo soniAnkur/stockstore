@@ -7,21 +7,18 @@
     class Stockstore {
 
         providersList: Array<ss.services.IStockProvider>;
-        static $inject = ['ss.services.StockstoreService','$scope','$http'];
+        static $inject = ['ss.services.StockstoreService','$scope'];
 
-        constructor(private stockstoreService: ss.services.IStockstoreService, private $scope: IStockstore, private $http: ng.IHttpService) {
+        constructor(private stockstoreService: ss.services.IStockstoreService, private $scope: IStockstore) {
 
-            //$scope.providersList = stockstoreService.getProviders();
-            //$scope.$apply();
+            //$scope.providersList = '[{"source_code":"UHERO","source_id":3},{"source_code":"NSE","source_id":33},{"source_code":"BCB","source_id":35}]';
 
-            //$http.jsonp('http://192.168.158.125:5050/QuandlAAS/v1/providers/').success(function (data) {
-            //    $scope.providersList = data;
-            //});
-
-            stockstoreService.getProviders().then((response: any): void=> {
+           // var vm = this;
+            stockstoreService.getProviders().then((response: ss.services.IStockProvider[]): void=> {
                 $scope.providersList = response;
             });
             
+
         }
     }
    
