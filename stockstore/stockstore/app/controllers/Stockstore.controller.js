@@ -4,17 +4,20 @@ var ss;
     (function (controllers) {
         'use strict';
         var Stockstore = (function () {
-            function Stockstore(stockstoreService, $scope) {
+            function Stockstore(stockstoreService, $scope, $http) {
+                //$scope.providersList = stockstoreService.getProviders();
+                //$scope.$apply();
                 this.stockstoreService = stockstoreService;
                 this.$scope = $scope;
-                $scope.providersList = '[{"source_code":"UHERO","source_id":3},{"source_code":"NSE","source_id":33},{"source_code":"BCB","source_id":35}]';
-                // var vm = this;
-                //stockstoreService.getProviders().then((response: ss.services.IStockProvider[]): void=> {
-                //    $scope.providersList = response;
+                this.$http = $http;
+                //$http.jsonp('http://192.168.158.125:5050/QuandlAAS/v1/providers/').success(function (data) {
+                //    $scope.providersList = data;
                 //});
-                //$scope.providersList = stockstoreService.getProviders();
+                stockstoreService.getProviders().then(function (response) {
+                    $scope.providersList = response;
+                });
             }
-            Stockstore.$inject = ['ss.services.StockstoreService', '$scope'];
+            Stockstore.$inject = ['ss.services.StockstoreService', '$scope', '$http'];
             return Stockstore;
         })();
         angular.module('ss.controllers').controller('ss.controllers.Stockstore', Stockstore);

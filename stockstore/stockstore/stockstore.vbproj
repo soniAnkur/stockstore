@@ -85,9 +85,11 @@
   <ItemGroup>
     <Content Include="app\index.html" />
     <Content Include="app\views\directive\providerDirective.html" />
+    <Content Include="app\views\stocklist.html" />
     <Content Include="app\views\nse-data.html" />
     <Content Include="app\views\nasdeq-data.html" />
     <Content Include="app\views\bse-data.html" />
+	<Content Include="app\views\stock-list.html" />
     <Content Include="app\views\providers.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />

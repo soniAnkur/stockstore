@@ -1,14 +1,11 @@
-﻿<div class='col-sm-6 col-md-4 col-lg-3'>
-    <div class="text-center alert alert-success">
+﻿<a href="#/providers/:{{provider.source_id}}">
+    <div class='col-sm-6 col-md-4 col-lg-3'>
+        <div class="text-center alert alert-info">
             <div>
-                <strong>{{provider.source_id | uppercase }}</strong>
-                <p>
-                   {{provider.source_code}}
-                </p>
-                <p>
-                    <a class='btn btn-primary' href="#/providers/:12123" role='button'>Get Stock List</a>
-                </p>
+                <strong class="label label-info">{{provider.source_code}}</strong>
                
+
             </div>
-      </div>
-</div>
+        </div>
+    </div>
+</a>
