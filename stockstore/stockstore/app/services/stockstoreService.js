@@ -13,12 +13,12 @@ var ss;
                 this.$http = $http;
             }
             StockStoreService.prototype.getProviders = function () {
-                return this.$http.get('http://192.168.158.125:5050/QuandlAAS/v1/providers/').then(function (response) {
+                return this.$http.get('http://192.168.158.133:5050/QuandlAAS/v1/providers/').then(function (response) {
                     return response.data;
                 });
             };
             StockStoreService.prototype.getStocksByProvider = function (providerId) {
-                return this.$http.get('/v1/provider/' + providerId).then(function (response) {
+                return this.$http.get('http://192.168.158.133:5050/QuandlAAS/v1/providers/' + providerId + '/stocks').then(function (response) {
                     return response.data;
                 });
             };

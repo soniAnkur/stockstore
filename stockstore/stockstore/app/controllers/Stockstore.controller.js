@@ -5,14 +5,13 @@ var ss;
         'use strict';
         var Stockstore = (function () {
             function Stockstore(stockstoreService, $scope) {
+                //$scope.providersList = '[{"source_code":"UHERO","source_id":3},{"source_code":"NSE","source_id":33},{"source_code":"BCB","source_id":35}]';
                 this.stockstoreService = stockstoreService;
                 this.$scope = $scope;
-                $scope.providersList = '[{"source_code":"UHERO","source_id":3},{"source_code":"NSE","source_id":33},{"source_code":"BCB","source_id":35}]';
                 // var vm = this;
-                //stockstoreService.getProviders().then((response: ss.services.IStockProvider[]): void=> {
-                //    $scope.providersList = response;
-                //});
-                //$scope.providersList = stockstoreService.getProviders();
+                stockstoreService.getProviders().then(function (response) {
+                    $scope.providersList = response;
+                });
             }
             Stockstore.$inject = ['ss.services.StockstoreService', '$scope'];
             return Stockstore;

@@ -38,14 +38,14 @@
 
          getProviders(): ng.IPromise<Array<any>> {
 
-            return this.$http.get('http://192.168.158.125:5050/QuandlAAS/v1/providers/').then((response: ng.IHttpPromiseCallbackArg<IStockProvider[]>): IStockProvider[]=> {
+            return this.$http.get('http://192.168.158.133:5050/QuandlAAS/v1/providers/').then((response: ng.IHttpPromiseCallbackArg<IStockProvider[]>): IStockProvider[]=> {
 
                return response.data;
 
             });
         }
         getStocksByProvider(providerId: string): ng.IPromise<Array<IStock>> {
-            return this.$http.get('/v1/provider/' + providerId).then((response: ng.IHttpPromiseCallbackArg<any>): any=> {
+            return this.$http.get('http://192.168.158.133:5050/QuandlAAS/v1/providers/' + providerId +'/stocks').then((response: ng.IHttpPromiseCallbackArg<any>): any=> {
                 return response.data;
             });
         }
